@@ -9,6 +9,8 @@ on:
     branches-ignore: [main]
   pull_request:
     branches: [main]
+  schedule:
+    - cron: "*/5 * * * *"
 
 ###############
 # Set the Job #
