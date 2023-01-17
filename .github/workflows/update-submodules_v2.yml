@@ -5,7 +5,11 @@ name: Update submodules v2!
 # Start the job on all push #
 #############################
 on:
-  schedule:
+   push:
+     branches-ignore: [main]
+   pull_request:
+     branches: [main]
+   schedule:
     - cron: "*/5 * * * *"
 
 ###############
